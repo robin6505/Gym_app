@@ -1,0 +1,14 @@
+<ion-view view-title="Days">
+	<ion-content padding="true">
+	<div ng-repeat="day in program['weeks'][0].days">
+		<div class="card" ui-sref="app.main.exerciseView">
+			<div class="item item-divider">
+			{{ day.name}}
+			</div>
+			<div class="item item-text-wrap">
+				<p>number of exercises: {{ day['exercises'].length }}</p>
+			</div>
+		</div>
+		
+	</ion-content>
+</ion-view>

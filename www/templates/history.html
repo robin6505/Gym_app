@@ -1,0 +1,15 @@
+<ion-view view-title="Previous workouts">
+	<ion-content padding="true">
+		<div class="card">
+			<div class="item item-divider">
+			{{ program['weeks'][0]['days'][0].name}}
+			</div>
+			
+			<div class="item item-text-wrap">
+			<div ng-repeat="ex in program['weeks'][0]['days'][0]['exercises']">
+				<p>{{ ex.name}}: {{ ex.sets }} x {{ ex.reps }} x {{ ex.weight }}</p>
+			</div>
+			<p>Comment: great training</p>
+		</div>
+	</ion-content>
+</ion-view>

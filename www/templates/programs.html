@@ -1,0 +1,16 @@
+<ion-view view-title="Programs">
+	<ion-content padding="true">
+	
+		<div class="card" ui-sref="app.main.weekView">
+			<div class="item item-divider">
+			{{ program.name }}
+			</div>
+			<div class="item item-text-wrap">
+				<p>Type: {{ program.style}}</p>
+				<p>number of weeks: {{ program.nWeeks}}</p>
+				<p>days per week: {{ program.nDays}}</p>
+			</div>
+		</div>
+		
+	</ion-content>
+</ion-view>

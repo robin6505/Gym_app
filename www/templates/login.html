@@ -1,0 +1,28 @@
+<ion-view view-title="Login" hide-nav-bar="true">
+	<ion-content  class="center"scroll="false" padding="true">
+		<div class="row">
+			<div class="col">
+				<div class="list list-inset">
+					<label class="item item-input">
+						<input type="text" placeholder="Email">
+					</label>
+					<label class="item item-input">
+						<input type="password" placeholder="Password">
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		<button class="button button-block button-assertive" ng-click="nextPage('app.main.home')">
+			Log in
+		</button>
+		</div>
+		<div class="row">
+			<div class="col">
+			<button class="button button-clear button-dark" ng-click="nextPage('signup')">
+				New? Create an account!
+			</button>
+		</div>
+		</div>
+	</ion-content>
+</ion-view>

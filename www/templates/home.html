@@ -1,0 +1,12 @@
+<ion-view view-title="Home" name="home-view">
+	<ion-content padding="true">
+		<div class="card" ui-sref="app.main.currentDayView">
+			<div class="item item-divider">
+			{{ program['weeks'][0]['days'][0].name}}
+			</div>
+			<div class="item item-text-wrap">
+				<p>number of exercises: {{ program['weeks'][0]['days'][0]['exercises'].length }}</p>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
