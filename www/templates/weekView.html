@@ -4,7 +4,49 @@
 		Back
 		</button>
     </ion-nav-buttons>
-	<ion-content padding="true">
+    <div class="bar-subheader">
+      <ion-scroll direction="x" class="wide-as-needed">
+      <div class="button-bar">
+        <a class="button inline-button">this is a button : 1</a>
+        <a class="button">this is a button : 2</a>
+        <a class="button">this is a button : 3</a>
+        <a class="button">this is a button : 4</a>
+        <a class="button">this is a button : 5</a>
+        <a class="button">this is a button : 6</a>
+        <a class="button">this is a button : 7</a>
+        <a class="button">this is a button : 8</a>
+        <a class="button">this is a button : 9</a>
+        <a class="button">this is a button : 10</a>
+        <a class="button">this is a button : 11</a>
+        <a class="button">this is a button : 12</a>
+        <a class="button">this is a button : 13</a>
+        <a class="button">this is a button : 14</a>
+        <a class="button">this is a button : 15</a>
+        <a class="button">this is a button : 16</a></span>
+        </div>
+      </ion-scroll>
+    </div>
+	<ion-content class="has-subheader" padding="true">
+    <ion-scroll direction="x" class="wide-as-needed">
+      <div class="button-bar">
+        <a class="button inline-button">this is a button : 1</a>
+        <a class="button">this is a button : 2</a>
+        <a class="button">this is a button : 3</a>
+        <a class="button">this is a button : 4</a>
+        <a class="button">this is a button : 5</a>
+        <a class="button">this is a button : 6</a>
+        <a class="button">this is a button : 7</a>
+        <a class="button">this is a button : 8</a>
+        <a class="button">this is a button : 9</a>
+        <a class="button">this is a button : 10</a>
+        <a class="button">this is a button : 11</a>
+        <a class="button">this is a button : 12</a>
+        <a class="button">this is a button : 13</a>
+        <a class="button">this is a button : 14</a>
+        <a class="button">this is a button : 15</a>
+        <a class="button">this is a button : 16</a></span>
+        </div>
+      </ion-scroll>
 	<div ng-repeat="week in program.weeks">
 		<div class="card" ui-sref="app.dayView">
 			<div class="item item-divider">
@@ -15,6 +57,8 @@
 				<p>days per week: {{ program.nDays}}</p>
 			</div>
 		</div>
+    </div>
+        
 		
 	</ion-content>
 </ion-view>
