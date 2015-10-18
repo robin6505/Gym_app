@@ -1,7 +1,7 @@
 angular.module('gymapp')
 
 .controller('SimpleCtrl', function($scope, $state) {
-
+	
     $scope.nextPage = function(page) {
         $state.go(page, {}, {
             reload: true

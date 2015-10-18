@@ -80,37 +80,55 @@ angular.module('gymapp', ['ionic'])
 				}
 			}
 		})
-		.state('app.main.weekView', {
+		.state('app.about', {
+            url: '/about',
+			views: {
+				'menuContent': {
+					templateUrl: 'templates/about.html',
+					controller: 'SimpleCtrl'
+				}
+			}
+		})
+		.state('app.feedback', {
+            url: '/feedback',
+			views: {
+				'menuContent': {
+					templateUrl: 'templates/feedback.html',
+					controller: 'SimpleCtrl'
+				}
+			}
+		})
+		.state('app.weekView', {
             url: '/programs/weeks',
 			views: {
-				'programs-tab': {
+				'menuContent': {
 					templateUrl: 'templates/weekView.html',
 					controller: 'SimpleCtrl'
 				}
 			}
 		})
-		.state('app.main.dayView', {
+		.state('app.dayView', {
             url: '/programs/weeks/days',
 			views: {
-				'programs-tab': {
+				'menuContent': {
 					templateUrl: 'templates/dayView.html',
 					controller: 'SimpleCtrl'
 				}
 			}
 		})
-		.state('app.main.exerciseView', {
+		.state('app.exerciseView', {
             url: '/programs/weeks/days/exercises',
 			views: {
-				'programs-tab': {
+				'menuContent': {
 					templateUrl: 'templates/exerciseView.html',
 					controller: 'SimpleCtrl'
 				}
 			}
 		})
-		.state('app.main.currentDayView', {
+		.state('app.currentDayView', {
             url: '/home/current',
 			views: {
-				'home-tab': {
+				'menuContent': {
 					templateUrl: 'templates/currentDayView.html',
 					controller: 'SimpleCtrl'
 				}

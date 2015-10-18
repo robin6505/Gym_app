@@ -1,4 +1,9 @@
 <ion-view view-title="Exercises">
+	<ion-nav-buttons side="left">
+        <button class="button button-icon" ui-sref="app.main.home"><i class="icon ion-android-arrow-back"></i>
+		Back
+		</button>
+    </ion-nav-buttons>
 	<ion-content padding="true">
 	<div ng-repeat="ex in program['weeks'][0]['days'][0]['exercises']">
 		<div class="card">

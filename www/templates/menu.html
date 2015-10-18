@@ -17,17 +17,20 @@
 		</ion-header-bar>
 		<ion-content>
 			<ion-list>
-				<ion-item menu-close ng-click="login()">
-					Sign out
+				<ion-item class="item-icon-left" menu-close ui-sref="app.main.home">
+					<i class="icon ion-home"></i>Home
 				</ion-item>
-				<ion-item menu-close ui-sref="app.settings">
-					Settings
+				<ion-item class="item-icon-left" menu-close ui-sref="app.settings">
+					<i class="icon ion-gear-a"></i>Settings
 				</ion-item>
-				<ion-item menu-close href="#/main/home">
-					About
+				<ion-item class="item-icon-left" menu-close ui-sref="app.about">
+					<i class="icon ion-information-circled"></i>About
 				</ion-item>
-				<ion-item menu-close href="#/main/home">
-					Feedback
+				<ion-item class="item-icon-left" menu-close ui-sref="app.feedback">
+					<i class="icon ion-chatbox-working"></i>Feedback
+				</ion-item>
+				<ion-item class="item-icon-left" menu-close ng-click="login()">
+					<i class="icon ion-log-out"></i>Sign out
 				</ion-item>
 			</ion-list>
 		</ion-content>
