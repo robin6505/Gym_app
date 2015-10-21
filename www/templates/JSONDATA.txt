@@ -1,19 +1,3 @@
-angular.module('gymapp')
-
-.controller('SimpleCtrl', function($scope, $state) {
-	//add this to controller where you want to disable drag menu open
-	$scope.$root.canDrag = false;
-    $scope.nextPage = function(page) {
-        $state.go(page, {}, {
-            reload: true
-        });
-    }
-	
-	$scope.login = function() {
-        $scope.nextPage('login');
-    }
-
-//-------------JSON DUMMY DATA--------------
 $scope.program = {
 		name: 'Starting Strength',
 		date: '5-9-2015',
@@ -2841,6 +2825,3 @@ $scope.program = {
 		}
 		]
 }]}
-//-------------JSON DUMMY DATA--------------
-	
-})
