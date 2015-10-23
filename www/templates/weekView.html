@@ -5,20 +5,28 @@
 		</button>
     </ion-nav-buttons>
 	
-    <ion-header-bar class="bar-assertive bar-subheader">
-      <ion-scroll direction="x" class="wide-as-needed">
+    <ion-header-bar class="bar-dark bar-subheader">
+      <ion-scroll direction="x" class="wide-as-needed" ng-model="mySelect" ng-change="showSelectValue(mySelect)">
 
 		
         
-        <a class="button button-dark" collection-repeat="week in program.weeks">Week: {{$index + 1}}</a>
+        <a class="button button-dark" ng-repeat="week in program.weeks" ng-click="selectDay($index)">Week {{$index + 1}}</a>
         
         
       </ion-scroll>
     </ion-header-bar>
 	<ion-content has-header="true" padding="true">
+		<div ng-repeat="day in program['weeks'][selectedDay].days">
+		<div class="card" ui-sref="app.exerciseView">
+			<div class="item item-divider">
+			{{ day.name}}
+			</div>
+			<div class="item item-text-wrap">
+				<p>number of exercises: {{ day['exercises'].length }}</p>
+			</div>
+		</div>
 	
-	
-	<div ng-repeat="week in program.weeks">
+	<!--<div ng-repeat="week in program.weeks">
 		<div class="card" ui-sref="app.dayView">
 			<div class="item item-divider">
 			Week: {{$index + 1}}
@@ -28,7 +36,7 @@
 				<p>days per week: {{ program.nDays}}</p>
 			</div>
 		</div>
-    </div>
+    </div>-->
         
 		
 	</ion-content>

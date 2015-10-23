@@ -3,6 +3,12 @@ angular.module('gymapp')
 .controller('SimpleCtrl', function($scope, $state) {
 	//add this to controller where you want to disable drag menu open
 	$scope.$root.canDrag = false;
+	$scope.selectedDay = 0;
+	
+	$scope.selectDay = function(index) {
+		$scope.selectedDay = index;
+	}
+	
     $scope.nextPage = function(page) {
         $state.go(page, {}, {
             reload: true
@@ -26,7 +32,7 @@ $scope.program = {
 			name: 'Volume Cycle',
 			days: [
 			{
-				name: 'Workout A',
+				name: 'Workout A Week1',
 				exercises: [
 				{
 					name: 'Squat',
@@ -119,7 +125,7 @@ $scope.program = {
 			name: 'Volume Cycle',
 			days: [
 			{
-				name: 'Workout B',
+				name: 'Workout B Week2',
 				exercises: [
 				{
 					name: 'Squat',
@@ -204,7 +210,7 @@ $scope.program = {
 					comment: '-'
 				}
 				]
-			},
+		},
 			{
 			goal: 'strength',
 			name: 'Volume Cycle',
