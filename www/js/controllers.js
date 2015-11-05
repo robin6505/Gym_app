@@ -1,7 +1,7 @@
 angular.module('gymapp')
 
 .controller('SimpleCtrl', function($scope, $state) {
-	//add this to controller where you want to disable drag menu open
+	//add this to controller where you want to disable drag menu open.
 	$scope.$root.canDrag = false;
 	$scope.selectedDay = 0;
 	
