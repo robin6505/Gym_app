@@ -6,17 +6,31 @@
     </ion-nav-buttons>
 	<ion-content padding="true">
 	<div ng-repeat="ex in program['weeks'][0]['days'][0]['exercises']">
+	
 		<div class="card">
 			<div class="item item-divider">
 			{{ ex.name}}
+			<span class="item-note">
+				{{ ex.sets }} x {{ ex.reps }} x {{ ex.weight }} Kg
+			</span>
 			</div>
-			<div class="item item-text-wrap">
-				<p>{{ ex.sets }} x {{ ex.reps }} x {{ ex.weight }}</p>
+			<div class="item item-text-wrap item-thumbnail-left">
+				<img src="img/exercises/{{ex.name}}.jpg">
 				<p> rest: {{ ex.rest }} minutes</p>
 				<p>comment: {{ ex.comment }}</p>
 			</div>
-		</div>
+		</div>		
     </div>
+	
+	<div class="list list-inset">
+		
+		
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Workout notes</span>
+			<textarea rows="2" cols="80" name="workout-notes" form="usrform" placeholder="Enter notes here..."></textarea>
+		</label>
+	</div>
+	
     <div class="button-bar">
         <a class="button button-ligth" ui-sref="app.main.home">Cancel</a>
         <a class="button button-assertive" ui-sref="app.main.home">Save workout</a>
