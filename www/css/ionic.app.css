@@ -9130,3 +9130,58 @@ a.button {
   /*
     border-bottom: solid !important;
     border-color: white !important;*/ }
+
+.currentDayEx {
+  position: relative;
+  height: 75%;
+  width: 100%; }
+
+.currentDaySet {
+  color: #fff !important;
+  height: 25%;
+  background-color: #444 !important;
+  text-align: center; }
+
+.currentDaySet h2, .currentDaySet h3, .currentDaySet h5 {
+  color: #fff !important; }
+
+.round-button-circle {
+  border-color: #f8f8f8;
+  color: #f8f8f8;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 5px;
+  width: 55px;
+  height: 55px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 100%;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 50px;
+  cursor: pointer; }
+
+/*.round-button-circle:hover {
+    color: #ef473a;
+    border-color: #ef473a;
+    text-decoration: none; }*/
+.round-button-circle.active, .round-button-circle.activated {
+  color: #ef473a;
+  border-color: #ef473a;
+  text-decoration: none; }
+
+/*.round-button-circle:after {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+    content: ' '; }*/
+.title-currentDaySet {
+  text-align: left;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 10px; }

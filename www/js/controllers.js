@@ -19,7 +19,126 @@ angular.module('gymapp')
         $scope.nextPage('login');
     }
 
+    $scope.showAlert = function() {
+        alert('You clicked the set bar');
+    }
+
 //-------------JSON DUMMY DATA--------------
+$scope.program2 = {
+		name: 'Bodybuilding',
+		date: '5-9-2015',
+		style: 'Powerlifting',
+		nWeeks: 1,
+		nDays: 2,
+		weeks: [
+		{
+			goal: 'strength',
+			name: 'Volume Cycle',
+			days: [
+			{
+				name: 'Lower body',
+				exercises: [
+				{
+					name: 'Squat',
+					sets: 3,
+					reps: 5,
+					weight: 100,
+					rest: 3,
+					comment: 'Just squat'
+				},
+				{
+					name: 'Leg press',
+					sets: 3,
+					reps: 5,
+					weight: 100,
+					rest: 3,
+					comment: '-'
+				},
+				{
+					name: 'Leg curl',
+					sets: 3,
+					reps: 5,
+					weight: 100,
+					rest: 3,
+					comment: '-'
+				},
+				{
+					name: 'Glute ham raise',
+					sets: 3,
+					reps: 5,
+					weight: 100,
+					rest: 3,
+					comment: '-'
+				},
+				{
+					name: 'abs' ,
+					sets: 3,
+					reps: 5,
+					weight: 100,
+					rest: 3,
+					comment: '-'
+				}
+				]
+			},
+			{
+				name: 'Upper body',
+				exercises: [
+				{
+					name: 'Bench press',
+					sets: 3,
+					reps: 5,
+					weight: 100,
+					rest: 3,
+					comment: '-'
+				},
+				{
+					name: 'Military press',
+					sets: 3,
+					reps: 5,
+					weight: 100,
+					rest: 3,
+					comment: '-'
+				},
+				{
+					name: 'Pull ups',
+					sets: 1,
+					reps: 5,
+					weight: 100,
+					rest: 3,
+					comment: '-'
+				},
+				{
+					name: 'Bicep curl',
+					sets: 3,
+					reps: 5,
+					weight: 100,
+					rest: 3,
+					comment: '-'
+				},
+				{
+					name: 'Tricep Extensions',
+					sets: 3,
+					reps: 5,
+					weight: 100,
+					rest: 3,
+					comment: '-'
+				}
+				]
+			}
+				]
+			}
+			]
+		}
+
+
+
+
+
+
+
+
+
+
 $scope.program = {
 		name: 'Starting Strength',
 		date: '5-9-2015',
