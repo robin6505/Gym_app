@@ -9134,7 +9134,8 @@ a.button {
 .currentDayEx {
   position: relative;
   height: 75%;
-  width: 100%; }
+  width: 100%;
+  overflow: scroll !important; }
 
 .currentDaySet {
   color: #fff !important;
